@@ -1,3 +1,15 @@
 body {
-    
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sofa {
+    width: 800px;
+    height: 400px;
+    background: url(../imagens/sofa01.jpg) no-repeat;
+    background-size: 100% auto;
 }
