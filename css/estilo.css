@@ -7,9 +7,70 @@ body {
     justify-content: center;
 }
 
+h1 {
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: #fff;
+    background: rgb(54, 54, 54);
+    border-radius: 5px 10px;
+}    
 .sofa {
-    width: 800px;
-    height: 400px;
+    width: 600px;
+    height: 300px;
     background: url(../imagens/sofa01.jpg) no-repeat;
     background-size: 100% auto;
+    margin: 20px;
+}
+
+.sofa svg {
+    mix-blend-mode: multiply;
+}
+
+label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+label.vermelho {
+    background: orange;
+}
+
+label.cinza {
+    background:grey;
+}
+
+label.amarelo {
+    background: yellowgreen;
+}
+
+label.azul {
+    background: lightskyblue;
+}
+
+.cls-1 {
+    fill: red;
+}
+
+#red-radio:checked ~ .sofa .cls-1 {
+    fill: orange;
+}
+
+#yellow-radio:checked ~ .sofa .cls-1 {
+    fill: yellowgreen;
+}
+
+#blue-radio:checked ~ .sofa .cls-1 {
+    fill: lightskyblue;
+}
+
+#grey-radio:checked ~ .sofa .cls-1 {
+    fill: grey;
+}
+
+input[type="radio"] {
+    visibility: hidden;
 }
